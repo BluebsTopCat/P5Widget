@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AAAAAAAA</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="todo">TODO</string>
+    <string name="timeofday">TimeOfDay</string>
+    <string name="background">Background</string>
+    <string name="persona_5_clock_widget">ペルソナ5 アプリウィジェット</string>
+    <string name="made_by_a_blueberry_3141">Fruit Basket Games製</string>
+    <string name="credit_to_atlus_for_the_creation_of_persona_5_pls_no_sue_me_for_this_application_to_work_you_must_input_an_api_key_from_openweathermaps_com_below">アプリをダウンロードしていただき、ありがとうございます。このアプリは、ATLUSが制作したものではなく、ファンが制作したものです。/nウィジェットを配置するには、ホーム画面で空いているスペースを長押しして、「ウィジェット」をタップし、リストから選択します。/nもし私の作ったものが気に入ったら、あるいはアプリに問題があったら、私のDiscordに参加することを検討してください!</string>
+    <string name="discord">Discordに参加しよう</string>
+</resources>

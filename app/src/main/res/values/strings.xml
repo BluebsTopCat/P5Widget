@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AAAAAAAA</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="todo">TODO</string>
+    <string name="timeofday">TimeOfDay</string>
+    <string name="background">Background</string>
+    <string name="persona_5_clock_widget">Persona 5 Clock Widget</string>
+    <string name="made_by_a_blueberry_3141">Made by Fruit Basket Games</string>
+    <string name="credit_to_atlus_for_the_creation_of_persona_5_pls_no_sue_me_for_this_application_to_work_you_must_input_an_api_key_from_openweathermaps_com_below">Thank you for downloading the app!\nThis app was not created by ATLUS, but is a fan-creation. \n\n To place the widget, On the home screen, tap and hold on any available space, then tap "Widgets" and select it from the list.\n\n If you like what I make, or have an issue with the app, consider joining my discord!</string>
+    <string name="discord">Join the Discord!</string>
+</resources>
