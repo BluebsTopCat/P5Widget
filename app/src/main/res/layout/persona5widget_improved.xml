@@ -7,213 +7,228 @@
     android:layout_marginTop="0dp"
     android:layout_marginEnd="0dp"
     android:layout_marginBottom="0dp"
-    android:background="#FF0000"
-    android:backgroundTint="#FF0000"
+    android:background="#00F8F3F3"
+    android:backgroundTint="#00FA0000"
     android:scaleX="1"
     android:scaleY="1">
 
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/DigitOneGroup"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/sublayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:constraint_referenced_ids="DigitOneBaseWhite,DigitOne,DigitOneBaseBlack" />
+        android:background="#00FFF759"
+        android:backgroundTint="#00FFF874"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="35dp"
+        android:scaleX="1"
+        android:scaleY="1">
 
-    <ImageView
-        android:id="@+id/DigitOneBaseWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:translationZ="-20px"
-        app:srcCompat="@drawable/basewhite_1" />
 
-    <ImageView
-        android:id="@+id/DigitOneBaseBlack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/DigitOneBaseWhite"
-        android:layout_alignTop="@id/DigitOneBaseWhite"
-        android:layout_alignEnd="@id/DigitOneBaseWhite"
-        android:layout_alignBottom="@id/DigitOneBaseWhite"
-        android:translationZ="-10px"
-        app:srcCompat="@drawable/baseblack_1" />
+        <ImageView
+            android:id="@+id/DigitOneBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    <ImageView
-        android:id="@+id/DigitOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/DigitOneBaseWhite"
-        android:layout_alignTop="@id/DigitOneBaseWhite"
-        android:layout_alignEnd="@id/DigitOneBaseWhite"
-        android:layout_alignBottom="@id/DigitOneBaseWhite"
-        app:srcCompat="@drawable/white_1" />
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/basewhite_1" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/DigitTwoGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="DigitTwoBaseBlack,DigitTwoBaseWhite,DigitTwo" />
+        <ImageView
+            android:id="@+id/DigitOneBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/baseblack_1" />
 
-    <ImageView
-        android:id="@+id/DigitTwoBaseWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/DigitOneBaseWhite"
-        android:layout_toEndOf="@id/DigitOne"
-        android:cropToPadding="false"
-        android:rotation="4"
-        android:translationX="-45dp"
-        android:translationY="-10dp"
-        android:translationZ="-20px"
-        app:srcCompat="@drawable/basewhite_5" />
+        <ImageView
+            android:id="@+id/DigitOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/white_1" />
 
-    <ImageView
-        android:id="@+id/DigitTwoBaseBlack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/DigitTwoBaseWhite"
-        android:layout_alignTop="@id/DigitTwoBaseWhite"
-        android:layout_alignEnd="@id/DigitTwoBaseWhite"
-        android:layout_alignBottom="@id/DigitTwoBaseWhite"
-        android:rotation="4"
-        android:translationX="-45dp"
-        android:translationY="-10dp"
-        android:translationZ="-10px"
-        app:srcCompat="@drawable/baseblack_5" />
+        <ImageView
+            android:id="@+id/DigitTwoBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DigitOneBaseWhite"
+            android:layout_marginStart="-45dp"
+            android:layout_toEndOf="@id/DigitOneBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/basewhite_5" />
 
-    <ImageView
-        android:id="@+id/DigitTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/DigitTwoBaseWhite"
-        android:layout_alignTop="@id/DigitTwoBaseWhite"
-        android:layout_alignEnd="@id/DigitTwoBaseWhite"
-        android:layout_alignBottom="@id/DigitTwoBaseWhite"
-        android:rotation="4"
-        android:translationX="-45dp"
-        android:translationY="-10dp"
-        app:srcCompat="@drawable/white_5" />
+        <ImageView
+            android:id="@+id/DigitTwoBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/DigitTwoBaseWhite"
+            android:layout_alignTop="@id/DigitTwoBaseWhite"
+            android:layout_alignEnd="@id/DigitTwoBaseWhite"
+            android:layout_alignBottom="@id/DigitTwoBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/baseblack_5" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/MonthGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="MonthBaseWhite" />
+        <ImageView
+            android:id="@+id/DigitTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/DigitTwoBaseWhite"
+            android:layout_alignTop="@id/DigitTwoBaseWhite"
+            android:layout_alignEnd="@id/DigitTwoBaseWhite"
+            android:layout_alignBottom="@id/DigitTwoBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/white_5" />
 
-    <ImageView
-        android:id="@+id/MonthBaseWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/DigitOneBaseWhite"
-        android:layout_toStartOf="@id/DigitOne"
-        android:translationX="60dp"
-        android:translationY="-8dp"
-        android:translationZ="-20px"
-        app:srcCompat="@drawable/monthbasewhite_4" />
+        <ImageView
+            android:id="@+id/MonthBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DigitOneBaseWhite"
+            android:layout_marginStart="-60dp"
+            android:layout_marginEnd="-60dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toStartOf="@id/DigitOneBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/monthbasewhite_4" />
 
-    <ImageView
-        android:id="@+id/MonthBaseBlack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/MonthBaseWhite"
-        android:layout_alignTop="@id/MonthBaseWhite"
-        android:layout_alignEnd="@id/MonthBaseWhite"
-        android:layout_alignBottom="@id/MonthBaseWhite"
-        android:translationX="60dp"
-        android:translationY="-8dp"
-        android:translationZ="-10px"
-        app:srcCompat="@drawable/monthbaseblack_4" />
+        <ImageView
+            android:id="@+id/MonthBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/MonthBaseWhite"
+            android:layout_alignTop="@id/MonthBaseWhite"
+            android:layout_alignEnd="@id/MonthBaseWhite"
+            android:layout_alignBottom="@id/MonthBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/monthbaseblack_4" />
 
-    <ImageView
-        android:id="@+id/Month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/MonthBaseWhite"
-        android:layout_alignTop="@id/MonthBaseWhite"
-        android:layout_alignEnd="@id/MonthBaseWhite"
-        android:layout_alignBottom="@id/MonthBaseWhite"
-        android:translationX="60dp"
-        android:translationY="-8dp"
-        app:srcCompat="@drawable/month_4" />
+        <ImageView
+            android:id="@+id/Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/MonthBaseWhite"
+            android:layout_alignTop="@id/MonthBaseWhite"
+            android:layout_alignEnd="@id/MonthBaseWhite"
+            android:layout_alignBottom="@id/MonthBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/month_4" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/WeatherGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="WeatherBaseWhite,Weather" />
+        <ImageView
+            android:id="@+id/WeatherBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/WeekDayBaseWhite"
+            android:layout_alignEnd="@id/WeekDayBaseWhite"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="0dp"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-80px"
+            app:srcCompat="@drawable/weather_base_white" />
 
-    <ImageView
-        android:id="@+id/WeatherBaseWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/DigitOneGroup"
-        android:layout_toEndOf="@id/DigitOneBaseWhite"
-        android:translationX="25dp"
-        android:translationY="17dp"
-        android:translationZ="-40px"
-        app:srcCompat="@drawable/weather_base_white" />
+        <ImageView
+            android:id="@+id/Weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/WeatherBaseWhite"
+            android:layout_alignTop="@id/WeatherBaseWhite"
+            android:layout_alignEnd="@id/WeatherBaseWhite"
+            android:layout_alignBottom="@id/WeatherBaseWhite"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-30px"
+            app:srcCompat="@drawable/cloudy_0" />
 
-    <ImageView
-        android:id="@+id/Weather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/WeatherBaseWhite"
-        android:layout_alignTop="@id/WeatherBaseWhite"
-        android:layout_alignEnd="@id/WeatherBaseWhite"
-        android:layout_alignBottom="@id/WeatherBaseWhite"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="6dp"
-        android:translationX="25dp"
-        android:translationY="17dp"
-        android:translationZ="-30px"
-        app:srcCompat="@drawable/cloudy_0" />
+        <ImageView
+            android:id="@+id/WeekDayBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DigitOneBaseWhite"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-80dp"
+            android:layout_marginEnd="-60dp"
+            android:layout_toEndOf="@id/MonthBaseWhite"
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-40px"
+            app:srcCompat="@drawable/weekdaywhite_4" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/WeekGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="WeekDayBaseWhite,WeekDay" />
+        <ImageView
+            android:id="@+id/WeekDayBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/WeekDayBaseWhite"
+            android:layout_alignTop="@id/WeekDayBaseWhite"
+            android:layout_alignEnd="@id/WeekDayBaseWhite"
+            android:layout_alignBottom="@id/WeekDayBaseWhite"
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/weekdayblack_4" />
 
-    <ImageView
-        android:id="@+id/WeekDayBaseWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/DigitOneGroup"
-        android:layout_toRightOf="@id/MonthBaseWhite"
-        android:rotation="-12"
-        android:translationX="17dp"
-        android:translationY="-30dp"
-        android:translationZ="-40px"
-        app:srcCompat="@drawable/basewhite_friday" />
+        <ImageView
+            android:id="@+id/WeekDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/WeekDayBaseBlack"
+            android:layout_alignTop="@id/WeekDayBaseBlack"
+            android:layout_alignEnd="@id/WeekDayBaseBlack"
+            android:layout_alignBottom="@id/WeekDayBaseBlack"
 
-    <ImageView
-        android:id="@+id/WeekDay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/WeekDayBaseWhite"
-        android:layout_alignTop="@id/WeekDayBaseWhite"
-        android:layout_alignEnd="@id/WeekDayBaseWhite"
-        android:layout_alignBottom="@id/WeekDayBaseWhite"
-        android:rotation="-14"
-        android:translationX="30dp"
-        android:translationY="-25dp"
-        app:srcCompat="@drawable/friday_inverted" />
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/weekday_4" />
 
-    <ImageView
-        android:id="@+id/CurrentTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/WeekDayBaseWhite"
-        android:layout_marginTop="-46dp"
-        android:layout_marginEnd="-98dp"
-        android:layout_toStartOf="@id/WeekDayBaseWhite"
-        android:rotation="-17"
-        android:scaleX=".6"
-        android:scaleY=".6"
-        app:srcCompat="@drawable/afterschool" />
+        <ImageView
+            android:id="@+id/CurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/WeekDayBaseWhite"
+            android:layout_marginStart="-15dp"
+            android:layout_marginEnd="-100dp"
+            android:layout_marginBottom="-80dp"
+            android:layout_toStartOf="@id/DigitOneBaseWhite"
+            android:rotation="-10"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/afterschool" />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

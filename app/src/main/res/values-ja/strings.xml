@@ -7,6 +7,11 @@
     <string name="background">Background</string>
     <string name="persona_5_clock_widget">ペルソナ5 アプリウィジェット</string>
     <string name="made_by_a_blueberry_3141">Fruit Basket Games製</string>
-    <string name="credit_to_atlus_for_the_creation_of_persona_5_pls_no_sue_me_for_this_application_to_work_you_must_input_an_api_key_from_openweathermaps_com_below">アプリをダウンロードしていただき、ありがとうございます。このアプリは、ATLUSが制作したものではなく、ファンが制作したものです。/nウィジェットを配置するには、ホーム画面で空いているスペースを長押しして、「ウィジェット」をタップし、リストから選択します。/nもし私の作ったものが気に入ったら、あるいはアプリに問題があったら、私のDiscordに参加することを検討してください!</string>
+    <string name="made_by_bl">アプリをダウンロードしていただき、ありがとうございます。このアプリは、ATLUSが制作したものではなく、ファンが制作したものです。/nウィジェットを配置するには、ホーム画面で空いているスペースを長押しして、「ウィジェット」をタップし、リストから選択します。/nもし私の作ったものが気に入ったら、あるいはアプリに問題があったら、私のDiscordに参加することを検討してください!</string>
     <string name="discord">Discordに参加しよう</string>
+    <string name="lattitude">緯度</string>
+    <string name="longitude">経度</string>
+    <string name="manuallocation">マニュアルの位置 - 英数字を使用</string>
+    <string name="accept">受入</string>
+    <string name="permissions">Persona 5 Widgetは、ウィジェットで正確な天気予報を使用できるようにするため、位置情報を収集します。これは、アプリが閉じられていても実行されますが、データは保存されず、気象データのためにWTTR Inにのみ送信されます。/n/nこの情報は、広告や追跡に使用されることはなく、今後も使用されることはありません。</string>
 </resources>

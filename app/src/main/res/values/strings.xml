@@ -7,6 +7,11 @@
     <string name="background">Background</string>
     <string name="persona_5_clock_widget">Persona 5 Clock Widget</string>
     <string name="made_by_a_blueberry_3141">Made by Fruit Basket Games</string>
-    <string name="credit_to_atlus_for_the_creation_of_persona_5_pls_no_sue_me_for_this_application_to_work_you_must_input_an_api_key_from_openweathermaps_com_below">Thank you for downloading the app!\nThis app was not created by ATLUS, but is a fan-creation. \n\n To place the widget, On the home screen, tap and hold on any available space, then tap "Widgets" and select it from the list.\n\n If you like what I make, or have an issue with the app, consider joining my discord!</string>
+    <string name="made_by_bl">Thank you for downloading the app!\nThis app was not created by ATLUS, but is a fan-creation. \n\n To place the widget, On the home screen, tap and hold on any available space, then tap "Widgets" and select it from the list.\n\n If you like what I make, or have an issue with the app, consider joining my discord! \n\n And if you REALLY like it, maybe donate to my KO-FI? This app is completely free, and maintaining it takes work. \n</string>
     <string name="discord">Join the Discord!</string>
+    <string name="lattitude">Lattitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="manuallocation">Manual Location</string>
+    <string name="accept">Accept</string>
+    <string name="permissions">Persona 5 Widget collects location data to enable the use of accurate weather displays in the widget. This runs even when the app is closed, but the data is never stored, and is only sent to WTTR In for the weather data \n\n This information is NOT, and will NEVER be used for advertising and/or tracking.</string>
 </resources>

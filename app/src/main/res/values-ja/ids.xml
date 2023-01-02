@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <item name="CentralDigit_Test" type="id" />
+    <item name="DigitTwoAligner" type="id" />
+    <item name="DigitTwoBaseWhite" type="id" />
+    <item name="DigitTwoBaseBlack" type="id" />
+    <item name="DigitTwo" type="id" />
+    <item name="DigitOneCenter" type="id" />
+    <item name="DigitTwoCenter" type="id" />
+    <item name="DigitOneGroup" type="id" />
+    <item name="DigitTwoGroup" type="id" />
+    <item name="MonthGroup" type="id" />
+    <item name="Month" type="id" />
+    <item name="MonthBaseBlack" type="id" />
+    <item name="WeatherGroup" type="id" />
+    <item name="WeatherBaseWhite" type="id" />
+    <item name="Weather" type="id" />
+    <item name="WeekGroup" type="id" />
+    <item name="WeekDay" type="id" />
 </resources>

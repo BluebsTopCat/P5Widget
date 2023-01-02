@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <item name="DigitTwoBaseWhite" type="id" />
+    <item name="DigitTwoBaseBlack" type="id" />
+    <item name="DigitTwo" type="id" />
+
+    <item name="DigitOneBaseWhite" type="id" />
+    <item name="DigitOneBaseBlack" type="id" />
+    <item name="DigitOne" type="id" />
+
+    <item name="MonthBaseWhite" type="id" />
+    <item name="MonthBaseBlack" type="id" />
+    <item name="Month" type="id" />
+
+    <item name="WeatherBaseWhite" type="id" />
+    <item name="Weather" type="id" />
+
+    <item name="WeekDayBaseWhite" type="id" />
+    <item name="WeekDay" type="id" />
+
+    <item name="CurrentTime" type="id" />
 </resources>

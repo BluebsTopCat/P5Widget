@@ -1,31 +1,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widgetlayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginStart="0dp"
-    android:layout_marginTop="0dp"
-    android:layout_marginEnd="0dp"
-    android:layout_marginBottom="0dp"
-    android:background="#00FF0000"
-    android:backgroundTint="#00FF0000"
-    android:scaleX="1"
-    android:scaleY="1">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00EA927C"
+    android:backgroundTint="#00FF7C36">
 
 
     <RelativeLayout
         android:id="@+id/sublayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="-200dp"
+        android:layout_marginBottom="-200dp"
         android:background="#000000"
-        android:backgroundTint="#FF0000"
+        android:backgroundTint="#00FF0000"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:paddingHorizontal="20dp"
+        android:paddingHorizontal="40dp"
         android:paddingVertical="35dp"
-        android:scaleX="1"
-        android:scaleY="1">
+        android:scaleX=".70"
+        android:scaleY=".70">
 
 
         <ImageView
@@ -144,7 +142,7 @@
             android:layout_alignTop="@id/WeekDayBaseWhite"
             android:layout_alignEnd="@id/WeekDayBaseWhite"
             android:layout_marginTop="-50dp"
-            android:layout_marginEnd="-5dp"
+            android:layout_marginEnd="0dp"
             android:translationX="-40dp"
             android:translationY="-30dp"
             android:translationZ="-80px"
@@ -158,11 +156,16 @@
             android:layout_alignTop="@id/WeatherBaseWhite"
             android:layout_alignEnd="@id/WeatherBaseWhite"
             android:layout_alignBottom="@id/WeatherBaseWhite"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="5dp"
             android:padding="10dp"
             android:translationX="-40dp"
             android:translationY="-30dp"
             android:translationZ="-30px"
             app:srcCompat="@drawable/cloudy_0" />
+
 
         <ImageView
             android:id="@+id/WeekDayBaseWhite"
@@ -212,11 +215,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/WeekDayBaseWhite"
-            android:layout_marginStart="-10dp"
-            android:layout_marginEnd="-90dp"
+            android:layout_marginStart="-15dp"
+            android:layout_marginEnd="-100dp"
             android:layout_marginBottom="-80dp"
             android:layout_toStartOf="@id/DigitOneBaseWhite"
-            android:rotation="-17"
+            android:rotation="-10"
             android:scaleX=".7"
             android:scaleY=".7"
             android:translationX="-40dp"
