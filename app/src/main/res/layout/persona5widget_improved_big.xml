@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widgetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="#F8F3F3"
+    android:backgroundTint="#FA0000"
+    android:scaleX="1"
+    android:scaleY="1">
+
+
+    <RelativeLayout
+        android:id="@+id/sublayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        android:backgroundTint="#00FF0000"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="35dp"
+        android:scaleX="1"
+        android:scaleY="1">
+
+
+        <ImageView
+            android:id="@+id/DigitOneBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/basewhite_1" />
+
+        <ImageView
+            android:id="@+id/DigitOneBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/baseblack_1" />
+
+        <ImageView
+            android:id="@+id/DigitOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/white_1" />
+
+        <ImageView
+            android:id="@+id/DigitTwoBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DigitOneBaseWhite"
+            android:layout_marginStart="-45dp"
+            android:layout_toEndOf="@id/DigitOneBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/basewhite_5" />
+
+        <ImageView
+            android:id="@+id/DigitTwoBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/DigitTwoBaseWhite"
+            android:layout_alignTop="@id/DigitTwoBaseWhite"
+            android:layout_alignEnd="@id/DigitTwoBaseWhite"
+            android:layout_alignBottom="@id/DigitTwoBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/baseblack_5" />
+
+        <ImageView
+            android:id="@+id/DigitTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/DigitTwoBaseWhite"
+            android:layout_alignTop="@id/DigitTwoBaseWhite"
+            android:layout_alignEnd="@id/DigitTwoBaseWhite"
+            android:layout_alignBottom="@id/DigitTwoBaseWhite"
+            android:rotation="4"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/white_5" />
+
+        <ImageView
+            android:id="@+id/MonthBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/DigitOneBaseWhite"
+            android:layout_marginStart="-60dp"
+            android:layout_marginEnd="-60dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toStartOf="@id/DigitOneBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/monthbasewhite_4" />
+
+        <ImageView
+            android:id="@+id/MonthBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/MonthBaseWhite"
+            android:layout_alignTop="@id/MonthBaseWhite"
+            android:layout_alignEnd="@id/MonthBaseWhite"
+            android:layout_alignBottom="@id/MonthBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-10px"
+            app:srcCompat="@drawable/monthbaseblack_4" />
+
+        <ImageView
+            android:id="@+id/Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/MonthBaseWhite"
+            android:layout_alignTop="@id/MonthBaseWhite"
+            android:layout_alignEnd="@id/MonthBaseWhite"
+            android:layout_alignBottom="@id/MonthBaseWhite"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/month_4" />
+
+        <ImageView
+            android:id="@+id/WeatherBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/WeekDayBaseWhite"
+            android:layout_alignEnd="@id/WeekDayBaseWhite"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="0dp"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-80px"
+            app:srcCompat="@drawable/weather_base_white" />
+
+        <ImageView
+            android:id="@+id/Weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@id/WeatherBaseWhite"
+            android:layout_alignTop="@id/WeatherBaseWhite"
+            android:layout_alignEnd="@id/WeatherBaseWhite"
+            android:layout_alignBottom="@id/WeatherBaseWhite"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-30px"
+            app:srcCompat="@drawable/cloudy_0" />
+
+        <ImageView
+            android:id="@+id/WeekDayBaseWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DigitOneBaseWhite"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-80dp"
+            android:layout_marginEnd="-60dp"
+            android:layout_toEndOf="@id/MonthBaseWhite"
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-40px"
+            app:srcCompat="@drawable/weekdaywhite_4" />
+
+        <ImageView
+            android:id="@+id/WeekDayBaseBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/WeekDayBaseWhite"
+            android:layout_alignTop="@id/WeekDayBaseWhite"
+            android:layout_alignEnd="@id/WeekDayBaseWhite"
+            android:layout_alignBottom="@id/WeekDayBaseWhite"
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            android:translationZ="-20px"
+            app:srcCompat="@drawable/weekdayblack_4" />
+
+        <ImageView
+            android:id="@+id/WeekDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/WeekDayBaseBlack"
+            android:layout_alignTop="@id/WeekDayBaseBlack"
+            android:layout_alignEnd="@id/WeekDayBaseBlack"
+            android:layout_alignBottom="@id/WeekDayBaseBlack"
+
+            android:rotation="-12"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/weekday_4" />
+
+        <ImageView
+            android:id="@+id/CurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/WeekDayBaseWhite"
+            android:layout_marginStart="-15dp"
+            android:layout_marginEnd="-100dp"
+            android:layout_marginBottom="-80dp"
+            android:layout_toStartOf="@id/DigitOneBaseWhite"
+            android:rotation="-10"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            android:translationX="-40dp"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/afterschool" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
