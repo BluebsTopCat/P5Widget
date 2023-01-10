@@ -194,8 +194,8 @@ class NewAppWidget : AppWidgetProvider() {
 
         //<editor-fold desc ="Day">
         val day = now.dayOfMonth;
-        val dayfirstdigit = if (day > 10) day.toString().substring(0, 1).toInt() else 0;
-        val dayseconddigit = if (day > 10) day.toString().substring(1, 2).toInt() else day;
+        val dayfirstdigit = if (day >= 10) day.toString().substring(0, 1).toInt() else 0;
+        val dayseconddigit = if (day >= 10) day.toString().substring(1, 2).toInt() else day;
 
         val daydigit1 = R.drawable.white_0 + dayfirstdigit;
         val daydigitbg1 = R.drawable.baseblack_0 + dayfirstdigit;
@@ -218,12 +218,11 @@ class NewAppWidget : AppWidgetProvider() {
         //</editor-fold>
 
 
-        // Construct the RemoteViews object, scaling appropriately
+        // Construct the RemoteVi   ews object, scaling appropriately
         val views : RemoteViews = when {
-            currentwidth in 0..160 || currentheight in 0..55 -> RemoteViews(context.packageName, R.layout.persona5widget_improved_smallest)
-            currentwidth in 160..225 || currentheight in 55..70 -> RemoteViews(context.packageName, R.layout.persona5widget_improved_small)
-            currentwidth in 225..350 || currentheight in 70..100 -> RemoteViews(context.packageName, R.layout.persona5widget_improved)
-            else -> RemoteViews(context.packageName, R.layout.persona5widget_improved_big)
+            currentwidth in 0..170 || currentheight in 0..60 -> RemoteViews(context.packageName, R.layout.persona5widget_improved_smallest)
+            currentwidth in 170..240 || currentheight in 60..80 -> RemoteViews(context.packageName, R.layout.persona5widget_improved_small)
+            else -> RemoteViews(context.packageName, R.layout.persona5widget_improved)
         }
 
         //Weather
